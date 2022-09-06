@@ -1,0 +1,5 @@
+printf can be assign to a variable and on printing variable it will print the string in printf along with the number of character in string
+------------------------
+a=prinf("Hello world");
+printf(a);
+------------------------
