@@ -4,9 +4,3 @@ a=prinf("Hello world");
 printf(a);
 ------------------------
 
-Ques1 >  Average of three numbers
-Ques2 > calculation of simple interest : amount ,rate and time is given
-Ques3 > Area of triangle if sides are given 
-Ques4 > Convert celcius to farenheit
-Ques5 > Find area of rectangle
-Ques6 > Convert upper case letters to lower case
