@@ -79,3 +79,17 @@ int main() {
  area =a*b;
  printf("The area of rectangle is %d:,area)
 }
+
+-------------------------------------------------------------------------------------
+Ques 6
+-------------------------------------------------------------------------------------
+
+#include <stdio.h>
+ int main(){
+  char a ,b
+  print("Please enter the character in upper case");
+  scanf("%c,&a);
+  b=a+32;
+  printf("%c",b);
+ 
+ }
