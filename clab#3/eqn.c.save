@@ -1,0 +1,18 @@
+ #include <stdio.h>
+int main(){
+ int x1,y1,x2,y2,m,c;
+ printf("Please enter  coordinate (x1,y1) \n");
+ scanf("%d%d",&x1,&y1);
+ printf("Please enter coordinate (x2,y2) \n");
+ scanf("%d%d",&x2,&y2);
+ m = (y2-y1)/(x2-x1);
+ c=  y1-(m*x1);
+ printf("General equation of a line is y = mx+c \n");
+ printf("Equation of required line is  y = %dx+(%d) \n",m,c);
+ return 0;
+
+
+
+
+
+}
