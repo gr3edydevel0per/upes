@@ -3,6 +3,7 @@
 #include <math.h>
 void armstrong(int);
 int factorial(int);
+void coprime(int);
 
 int main(){
     int num;
@@ -10,6 +11,7 @@ int main(){
     scanf("%d",&num);
     armstrong(num);
     printf("The factorial of %d is %d \n",num,factorial(num));
+    coprime(num);
     return 0;
 }
 
@@ -44,3 +46,23 @@ int factorial(int x){
     else{
         return x * factorial(x-1);
     }}
+    
+void coprime(int x){
+      int hcf,rev_x=0,i;
+      int temp=x;
+          while (temp != 0){
+        rev_x= rev_x * 10;
+        rev_x = rev_x + temp%10;
+        temp = temp/10;
+    }
+      for(i=1;i<=x;i++) {
+	  if(x%i==0 && rev_x%i==0){
+	   hcf = i; }
+	 }
+	 if(hcf == 1){
+	  printf("%d and %d are CO-PRIME NUMBERS.", x, rev_x);
+	 }
+	 else{
+	     printf("%d and %d are NOT CO-PRIME NUMBERS.", x, rev_x);
+	 }
+}
