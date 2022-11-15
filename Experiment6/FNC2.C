@@ -3,7 +3,7 @@
 
 int triangle_area(int,int);
 void swap(int*,int*);
-float* remainder(a,b);
+float *rem(int*, int*);
 
 int main(){
     int at,a,b;
@@ -13,8 +13,8 @@ int main(){
     printf("The area of triangle is %d\n",at);
     swap(&a,&b);
     printf("The numebrs after swapping are a is %d and b is %d\n",a,b);
-    
-    
+    printf("The remainder of given numebrs is %d",rem(&a,&b));
+
     
 }
 
@@ -30,4 +30,8 @@ void swap(int *x , int *y){
     *x = *x ^ *y;
     *y = *x ^ *y;
     *x = *x ^ *y;
+}
+
+float *rem(int *x,int *y){
+    return (*x) % (*y);
 }
