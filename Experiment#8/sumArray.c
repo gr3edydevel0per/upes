@@ -19,8 +19,15 @@ for(int a=0;a<2;a++){
   for(int j=0;j<2;j++){
     for(int k=0;k<2;k++){
         sum_row[j]+=arr[j][k];
+        sum_col[k]+=arr[j][k];
+        
+        
     }
-    printf("Sum of %d row is %d",j,sum_row[j]);
   }
- 
+  
+  for(int i=0;i<2;i++){
+    printf("Sum of %d col is %d \t",i,sum_col[i]);
+    printf("Sum of %d row is %d \n",i,sum_row[i]);
+      
+  }
 }
