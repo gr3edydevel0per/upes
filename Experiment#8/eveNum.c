@@ -4,7 +4,7 @@ int main(){
  int count=0 ;   //initializing count variable
  for(int i=0;i<4;i++){
     for(int j=0;j<4;j++){
-      scanf("%d",&arr[i][j])
+      scanf("%d",&arr[i][j]);
     }
  }
 
@@ -16,7 +16,7 @@ int main(){
   }
 
   
-  printf("Number of even numbers in the given 2-D Matrix is %d",count)
+  printf("Number of even numbers in the given 2-D Matrix is %d",count);
 
 
 }
