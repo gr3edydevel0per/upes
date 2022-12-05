@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-int binarySearch(int arr[], int l, int end, int x)
+int binarySearch(int arr[], int start, int end, int x)
 {
-    if (end >= l) {
-        int mid = l + (end - l) / 2;
+    if (end >= start) {
+        int mid = start + (end - start) / 2;
         if (arr[mid] == x)
             return mid;
         if (arr[mid] > x)
-            return binarySearch(arr, l, mid - 1, x);
+            return binarySearch(arr, start, mid - 1, x);
  
         return binarySearch(arr, mid + 1, end, x);
     }
