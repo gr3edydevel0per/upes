@@ -29,10 +29,12 @@ int main()
   Block1.next=NULL;
   Block1.num1=substrings[0];
   Block1.num2=substrings[1];
+  // Initializing Next block address
   Block1.next = &Block2;
   Block2.num1=substrings[2];
   Block2.num2=substrings[3];
-
+  Block2.next= NULL;
+  // Terminating  the nodes
  printf("%d%d%d%d",Block1.num1,Block1.num2,Block1.next->num1,Block1.next->num2);
     return 0;
 }
