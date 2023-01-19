@@ -2,7 +2,7 @@
 
 void main(){
 
-    int even=0,odd=0, arr_len;
+    int even=0,odd=0;
 
     int arr[4][3]={{1,2,3},{2,3,4},{3,4,5},{4,5,6}};   
 
