@@ -1,0 +1,11 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Doc file - https://docs.google.com/document/d/1dD0yluwuhVOpc5nEy3LpXbTIQ0Dz4TYSWx94I7gbRAw/edit?usp=sharing +
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+1. To take array as an input and print the array
+2. Linear search in 1-D array
+3. Take a value and use pointers to print address and value
+4. Linear search on N x N matrix
+5. Pointer to a pointer
+6. Comparing size of union and structure
