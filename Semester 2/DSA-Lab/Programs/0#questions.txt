@@ -9,3 +9,18 @@
 4. Linear search on N x N matrix
 5. Pointer to a pointer
 6. Comparing size of union and structure
+
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++  NOTES                                                                                                     +
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=++
+
+
+char str[15];
+
+[n-1] is the size of string because the last element i.e. null character '\0' is also counter as a character
+
+
+
