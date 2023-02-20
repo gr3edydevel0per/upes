@@ -33,7 +33,7 @@ for(int a=0;a<3;a++){
   
   // displaying sum
   for(int i=0;i<3;i++){
-    printf("Sum of %d col is %d \t",i,sum_col[i]);
+    printf("Sum of %d col  is %d \t",i,sum_col[i]);
     printf("Sum of %d row is %d \n",i,sum_row[i]);
       
   }
