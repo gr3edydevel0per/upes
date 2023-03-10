@@ -12,6 +12,7 @@ typedef struct ListNode{
 
 ListNode *createList(int);
 void displayList(ListNode*);
+ListNode *reverseList(ListNode*);
 
 int main(){
  int num;
@@ -20,6 +21,10 @@ int main(){
  scanf("%d",&num);
  head = createList(num);
 displayList(head);
+printf("\n+++++++++++++++++++++++++++++++++++++++")
+printf("\n          REVERSED LIST                ")
+printf("\n+++++++++++++++++++++++++++++++++++++++")
+displayList(reverseList(head));
 }
 
 ListNode *createList(int nodeNum){
@@ -60,3 +65,19 @@ ListNode *createList(int nodeNum){
      }
  }
 
+
+
+ListNode *reverseList(ListNode *head){
+   ListNode *prev,*curr,*forward;
+   prev = NULL;
+   curr=head;
+   while(curr!=NULL){
+    forward = curr->next;
+    curr->next=prev;
+    prev=curr;
+    curr =forward;
+   }
+   return prev;
+
+
+}
