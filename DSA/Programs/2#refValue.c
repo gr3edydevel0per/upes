@@ -26,7 +26,7 @@ int main(){
    printf("Swapping of Numbers using call by reference \n");
    swapNumByref(&num3,&num4);
    printf("num3 = %d\t num4 = %d",num3,num4);
-
+  
 
 }
 
