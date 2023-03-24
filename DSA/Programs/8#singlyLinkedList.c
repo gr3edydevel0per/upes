@@ -10,6 +10,7 @@ typedef struct ListNode{
 
 
 
+void HeadNodeInsertion(ListNode*,ListNode*);
 ListNode *createList(int);
 void displayList(ListNode*);
 ListNode *reverseList(ListNode*);
@@ -21,10 +22,19 @@ int main(){
  scanf("%d",&num);
  head = createList(num);
 displayList(head);
-printf("\n+++++++++++++++++++++++++++++++++++++++")
-printf("\n          REVERSED LIST                ")
-printf("\n+++++++++++++++++++++++++++++++++++++++")
+printf("\n+++++++++++++++++++++++++++++++++++++++");
+printf("\n          REVERSED LIST                ");
+printf("\n+++++++++++++++++++++++++++++++++++++++");
 displayList(reverseList(head));
+printf("\n+++++++++++++++++++++++++++++++++++++++");
+printf("\n          Insertion At Head            ");
+printf("\n+++++++++++++++++++++++++++++++++++++++");
+newNode = (ListNode*)malloc(sizeof(ListNode));
+newNode->data=23;
+newNode->next=NULL;
+HeadNodeInsertion(newNode,head)
+displayList(head);
+
 }
 
 ListNode *createList(int nodeNum){
@@ -80,4 +90,9 @@ ListNode *reverseList(ListNode *head){
    return prev;
 
 
+}
+
+void HeadNodeInsertion(ListNode *newNode,ListNode *head){
+    newNode->next=head;
+    head=newNode;
 }
