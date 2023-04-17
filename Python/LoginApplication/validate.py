@@ -1,6 +1,19 @@
 import string 
+import os
 
-def passwordcheck(passcode):
+
+
+def userCheck(username):
+    with open(r"D:\\Github\\lab-work\\Python\\LoginApplication\\Records\\database.txt","r") as db:
+           records = db.read().split("\n")
+           for i in records:
+                if i[0:14].rstrip()==username:
+                        return True
+    return False   
+ 
+
+
+def passwordCheck(passcode):
     counter=True
     message = """********************************************
 *               Password is weak           *
@@ -16,15 +29,14 @@ def passwordcheck(passcode):
     if list(filter(lambda x: x in string.punctuation,passcode))==[]:
         message+= "Atleast one character should be a special character \n"
     return  message if message!="" else counter
-     
 
-
-def userNameCheck(username):
+def credentialsCheck(username,passcode):
     with open(r"D:\\Github\\lab-work\\Python\\LoginApplication\\Records\\database.txt","r") as db:
            records = db.read().split("\n")
            for i in records:
                 if i[0:14].rstrip()==username:
-                    return True
+                    if i[-10::].rstrip()==passcode:
+                        return True
     return False
 
 
@@ -33,4 +45,18 @@ def preprocessuser(username,passcode):
     passcode = passcode if len(passcode)==10 else passcode+(" ")*(10-len(passcode))
     return username+"#"*5+passcode
 
-#pass [-10::].rstrip()
+
+def mkUserdir(username):
+        parent_dir = r"D:\\Github\\lab-work\\Python\\LoginApplication\\Records"
+        path = os.path.join(parent_dir, username)
+        os.mkdir(path)
+
+def storeData(record):
+        with open(r"D:\\Github\\lab-work\\Python\\LoginApplication\\Records\\database.txt","a") as db:
+                db.write(f"\n{record}")
+        return True
+
+
+
+
+
