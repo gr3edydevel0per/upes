@@ -1,3 +1,0 @@
-#1 Step by step method of instaling java jdk
-#2 Write about 5 popular java ide's
-#3 Write a program in java that prints hello world
